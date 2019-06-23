@@ -1,0 +1,52 @@
+Author: Mohd Hamid
+EmailId: hamid7825@gmail.com
+
+Files:
+Server.js : it is main file to run the Application and combines code from all the other files.
+Instructions: it contains all the information regarding the code organization.
+Implentation: it contains all the implementation related details.
+package.json: it contains the basic information about app and various dependencies.
+
+Folders:
+1. database: contains all the models that are used in the application.
+	i. models.
+		a. company: model to store company data.
+		B. comstu: model to store data for student registered for company.
+		a. student: model to store student data.
+	
+2. node_modules: contains the modules that are used in the application.
+3. public: contains all the css, image and vendor files that are used.
+4. views: contains all the ejs templating files .
+	a. addcompanyshow.ejs: it shows that the company data is successfully stored.
+	b. addcompstu.ejs: it shows that the student is successfully registered for the company.
+	c. addstudent.ejs: it shows the form to enter student data.
+	d. addstushow.ejs: it shows that the student data is successfully stored.
+	e. editstudent.ejs: it shows the form to edit student data.
+	f. footer.ejs: it is the footer used in all pages.
+	g. header.ejs: it is the header used in all pages.
+	h. index.ejs: it is the home page of the website.
+	i. regcompany.ejs: it shows the form to enter company data.
+	j. regstu.ejs: it shows the form to register student for a company.
+	k. removestudent.ejs: it shows the form to remove student data.
+	l. searchstudent.ejs: it shows the form to search student data.
+	m. show.ejs: it shows the result of remove student page.
+	n. show1.ejs: it shows the result of search student page.
+	o. show2.ejs: it shows the result of edit student page.
+	p. showcom.ejs: it shows all the student registered for any company.
+	q. showcomp.ejs it shows the result of remove company page.
+	r. showforcomp.ejs: it shows the form to show all student registered for the company.
+	s. showforstu.ejs: it shows the form to show all company registered by the student.
+	t. showstu.ejs: it shows all the company registered by any student.
+	u. showstucomp.ejs: it shows the result of unregister student from company.
+	v. sidebar.ejs: sidebar template used in all pages.
+	w. sidenext.ejs: sidenext template used in all pages.
+	x. temp.ejs: it shows the error page while entering any values in the form.
+	y. unregcompany.ejs: it shows the form to remove company from the databse.
+	z. unregstu.ejs: it contains the form to unregister studnet from company.
+
+
+How to run the game:
+Firstly open cmd in administrator mode and type "net start mongodb"
+Goto the folder containg all the files and open Git Bash here and type nodemon server.js
+Then open Google Chrome and visit "localhost:3000/"
+

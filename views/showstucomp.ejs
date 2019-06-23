@@ -1,0 +1,49 @@
+<%- include('header') -%>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <%- include('sidebar') -%>    
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <%- include('sidenext') -%>  
+
+      <div class="container-fluid">
+        <h3 class="mt-4">Search Result:</h3>
+        <br>
+        Company : <%= locals.name%><br>
+        Rollno: <%= locals.rollno%><br><br><br><br><br>
+
+        <form action="/post/remcomp2" method="POST">
+          Company:<br>
+            <select name="company" value=<%= locals.company%>>
+              <option><%= locals.name%></option>
+            </select>
+          <br>
+          Rollno:<br>
+          <select name="rollno" value=<%= locals.rollno%>>
+            <option><%= locals.rollno%></option>
+          </select>
+        <br>
+          Press the submit Button to delete:<br>
+          <input type="submit" value="Submit">
+      </form> 
+      </div>
+      
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+ 
+  <%- include('footer') -%>
+ 
+
+</body>
+
+</html>

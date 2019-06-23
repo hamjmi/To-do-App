@@ -1,0 +1,38 @@
+<%- include('header') -%>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <%- include('sidebar') -%>    
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <%- include('sidenext') -%>  
+
+      <div class="container-fluid">
+        <h3 class="mt-4">Search Student from the Database</h3>
+        <br><h4>Please fill all Fields, Otherwise you'll be redirected to same page..</h4>
+
+        <form action="/post/rem1" method="POST">
+            
+            RollNo:<br>
+            <input type="text" name="rollno">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form> 
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+ 
+  <%- include('footer') -%>
+ 
+
+</body>
+
+</html>

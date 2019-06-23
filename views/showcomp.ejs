@@ -1,0 +1,46 @@
+<%- include('header') -%>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <%- include('sidebar') -%>    
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <%- include('sidenext') -%>  
+
+      <div class="container-fluid">
+        <h3 class="mt-4">Search Result:</h3>
+        <br>
+        Name : <%= locals.name%><br>
+        Profile: <%= locals.profile%><br>
+        Location: <%= locals.location%><br>
+        Package : <%= locals.package%><br><br><br><br>
+
+        <form action="/post/remcomp1" method="POST">
+          Name:<br>
+            <select name="name" value=<%= locals.name%>>
+              <option><%= locals.name%></option>
+            </select>
+          <br>
+          Press the submit Button to delete:<br>
+          <input type="submit" value="Submit">
+      </form> 
+      </div>
+      
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+ 
+  <%- include('footer') -%>
+ 
+
+</body>
+
+</html>

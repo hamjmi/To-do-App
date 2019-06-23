@@ -1,0 +1,40 @@
+<%- include('header') -%>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <%- include('sidebar') -%>    
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <%- include('sidenext') -%>  
+
+      <div class="container-fluid">
+        
+        <br>
+       
+       
+<h2>Rollno <%= posts[0].rollno%> is registered in following companies</h2><br><br>
+         <ul>
+            <% posts.forEach(function(post){ %>
+              <li><%= post.company%></li>
+            <% }) %>
+          </ul>
+      </div>
+      
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+ 
+  <%- include('footer') -%>
+ 
+
+</body>
+
+</html>

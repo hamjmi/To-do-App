@@ -1,0 +1,55 @@
+<%- include('header') -%>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <%- include('sidebar') -%>    
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <%- include('sidenext') -%>  
+
+      <div class="container-fluid">
+        <h3 class="mt-4">Search Result:</h3>
+        <br>
+        Name : <%= locals.name%><br>
+        Department: <%= locals.department%><br>
+        RollNo : <%= locals.rollno%><br>
+        Cgpa : <%= locals.cgpa%><br>
+      </div>
+      <div class="container-fluid">
+        <h3 class="mt-4">Enter updated Student data </h3>
+
+        <form action="/post/rem4" method="POST">
+            Name:<br>
+            <input type="text" name="name">
+            <br>
+            Department:<br>
+            <input type="text" name="department">
+            <br>
+            RollNo:<br>
+            <select name="rollno" value=<%= locals.rollno%>>
+              <option><%= locals.rollno%></option>
+            </select>
+            <br>
+            Cgpa:<br>
+            <input type="text" name="cgpa">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form> 
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+ 
+  <%- include('footer') -%>
+ 
+
+</body>
+
+</html>

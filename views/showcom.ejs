@@ -1,0 +1,41 @@
+<%- include('header') -%>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <%- include('sidebar') -%>    
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <%- include('sidenext') -%>  
+
+      <div class="container-fluid">
+        
+        <br>
+       
+       
+<h2>Company <%= posts[0].company%> is registered by for following students</h2><br><br>
+       <h3>Rollno:</h3><br>  
+<ul>
+            <% posts.forEach(function(post){ %>
+              <li><%= post.rollno%></li>
+            <% }) %>
+          </ul>
+      </div>
+      
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+ 
+  <%- include('footer') -%>
+ 
+
+</body>
+
+</html>
