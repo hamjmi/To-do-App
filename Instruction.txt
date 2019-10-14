@@ -2,10 +2,10 @@ Author: Mohd Hamid
 EmailId: hamid7825@gmail.com
 
 Files:
-Server.js : it is main file to run the Application and combines code from all the other files.
-Instructions: it contains all the information regarding the code organization.
-Implentation: it contains all the implementation related details.
-package.json: it contains the basic information about app and various dependencies.
+Server.js : It is main file to run the Application and combines code from all the other files.
+Instructions: It contains all the information regarding the code organization.
+Implentation: It contains all the implementation related details.
+package.json: It contains the basic information about app and various dependencies.
 
 Folders:
 1. database: contains all the models that are used in the application.
@@ -14,7 +14,7 @@ Folders:
 		B. comstu: model to store data for student registered for company.
 		a. student: model to store student data.
 	
-2. node_modules: contains the modules that are used in the application.
+2. node_modules: Contains all the modules that are used in the application.
 3. public: contains all the css, image and vendor files that are used.
 4. views: contains all the ejs templating files .
 	a. addcompanyshow.ejs: it shows that the company data is successfully stored.
