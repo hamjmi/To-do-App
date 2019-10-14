@@ -34,7 +34,8 @@ const validateAddStudent=async(req,res,next)=>{
     //checking no input is empty
     if(!(req.body.name)||!(req.body.department)||!(req.body.rollno)||!(req.body.cgpa))
     {
-        return res.redirect('/addstudent.html')
+        //check1 redirecting to addstudent
+	    return res.redirect('/addstudent.html')
     }
     var query;
 	if(req.body.rollno){	
