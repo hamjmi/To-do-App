@@ -1,4 +1,5 @@
-
+//string name="mohd hamid";
+//cout<<"Author : "<<hamid<<endl;
 //Author: Mohd Hamid
 //EmailId: hamid7825@gmail.com
 //College: Jamia Millia Islamia
