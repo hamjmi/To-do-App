@@ -1,6 +1,6 @@
 # To-do-App
 
-Author: Mohd Hamid
+Author: Mohd Hamid\n
 EmailId: hamid7825@gmail.com
 
 This is a simple Nodejs and Mongodb based Placement application.
